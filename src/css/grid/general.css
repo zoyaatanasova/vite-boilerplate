@@ -1,0 +1,15 @@
+.container {
+	padding: 0 var(--grid-gap);
+}
+
+.row {
+	margin: 0 calc(-1 * var(--grid-gap));
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class*='col-'] {
+	padding: 0 var(--grid-gap) / 2;
+	flex-grow: 0;
+	flex-shrink: 0;
+}

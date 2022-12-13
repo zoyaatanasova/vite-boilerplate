@@ -1,3 +1,25 @@
+:root {
+	--dark: 0, 0, 0;
+	--light: 255, 255, 255;
+	--link: 255, 0, 0;
+	--color-dark: rgb(var(--dark));
+	--color-light: rgb(var(--light));
+	--color-link: rgba(var(--link));
+	--font-family-base: Helvetica, Arial, sans-serif;
+	--font-size-base: 14px;
+	--font-size-h1: 48px;
+	--font-size-h2: 40px;
+	--font-size-h3: 32px;
+	--font-size-h4: 24px;
+	--font-size-h5: 20px;
+	--font-size-h6: 16px;
+	--line-height-base: 1.25;
+	--transition-duration: 0.3s;
+	--transition-timing-function: ease-in-out;
+	--shell-width: 1170px;
+	--grid-gap: 16px;
+}
+
 *,
 *::before,
 *::after {
@@ -8,17 +30,17 @@ html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+	-webkit-tap-highlight-color: rgba(var(--dark), 0.2);
 }
 
 body {
-	font-family: sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-	color: #333;
-	min-width: 20rem;
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-base);
+	color: var(--color-dark);
+	min-width: 320px;
 	margin: 0;
-	background-color: #e1e1e1;
+	background-color: var(--color-light);
 	text-decoration-skip-ink: auto;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -74,8 +96,8 @@ button,
 select,
 textarea {
 	transition-property: color, opacity, border-color, background-color, box-shadow, fill, stroke;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
 }
 
 fieldset {
@@ -163,7 +185,7 @@ textarea::placeholder {
 
 input:-webkit-autofill {
 	-webkit-text-fill-color: inherit;
-	box-shadow: 0 0 0 62.5rem #fff inset;
+	box-shadow: 0 0 0 62.5rem var(--color-light) inset;
 }
 
 [id] {
@@ -171,27 +193,27 @@ input:-webkit-autofill {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: var(--font-size-h1);
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: var(--font-size-h2);
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: var(--font-size-h3);
 }
 
 h4 {
-	font-size: 1.5rem;
+	font-size: var(--font-size-h4);
 }
 
 h5 {
-	font-size: 1.25rem;
+	font-size: var(--font-size-h5);
 }
 
 h6 {
-	font-size: 1rem;
+	font-size: var(--font-size-h6);
 }
 
 h1,
@@ -219,7 +241,7 @@ h6:last-child {
 }
 
 a {
-	color: #f00;
+	color: var(--color-link);
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -254,9 +276,9 @@ blockquote:last-child {
 }
 
 .shell {
-	max-width: 1170px;
-	padding-right: 16px;
-	padding-left: 16px;
+	max-width: var(--shell-width);
+	padding-right: var(--grid-gap);
+	padding-left: var(--grid-gap);
 	margin-right: auto;
 	margin-left: auto;
 }
