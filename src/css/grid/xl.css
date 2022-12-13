@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1440px) {
+	.col-xl-1 {
+		flex-basis: calc(100% / 12 * 1);
+	}
+
+	.col-xl-2 {
+		flex-basis: calc(100% / 12 * 2);
+	}
+
+	.col-xl-3 {
+		flex-basis: calc(100% / 12 * 3);
+	}
+
+	.col-xl-4 {
+		flex-basis: calc(100% / 12 * 4);
+	}
+
+	.col-xl-5 {
+		flex-basis: calc(100% / 12 * 5);
+	}
+
+	.col-xl-6 {
+		flex-basis: calc(100% / 12 * 6);
+	}
+
+	.col-xl-7 {
+		flex-basis: calc(100% / 12 * 7);
+	}
+
+	.col-xl-8 {
+		flex-basis: calc(100% / 12 * 8);
+	}
+
+	.col-xl-9 {
+		flex-basis: calc(100% / 12 * 9);
+	}
+
+	.col-xl-10 {
+		flex-basis: calc(100% / 12 * 10);
+	}
+
+	.col-xl-11 {
+		flex-basis: calc(100% / 12 * 11);
+	}
+
+	.col-xl-12 {
+		flex-basis: calc(100% / 12 * 12);
+	}
+}
