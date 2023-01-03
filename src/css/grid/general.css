@@ -3,7 +3,7 @@
 }
 
 .row {
-	margin: 0 calc(-1 * var(--grid-gap));
+	margin: 0 calc(-1 * var(--grid-gap) / 2);
 	display: flex;
 	flex-wrap: wrap;
 }
